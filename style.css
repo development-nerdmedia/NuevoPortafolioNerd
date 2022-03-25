@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --fuente-poppins: "Poppins", sans-serif;
+}
+
+body * {
+  font-family: var(--fuente-poppins);
+}
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 68px;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #213239;
+}
+.sitio {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.sitio .web {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+  text-align: right;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  text-transform: uppercase;
+  filter: drop-shadow(4.99458px 4.99458px 4.99458px rgba(0, 0, 0, 0.25));
+}
+.sitio .categoria {
+  font-weight: bold;
+  font-size: 37.4594px;
+  line-height: 40px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+.portafolio .title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.portafolio {
+  width: 1380px;
+  margin: 0 auto;
+}
+.tabs-portafolio {
+  text-align: center;
+}
+ol,
+ul {
+  overflow-wrap: break-word;
+}
+ul,
+li,
+a,
+h1,
+h2 {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.tabs-portafolio li {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: -0.015em;
+  margin: 0 30px;
+}
+.tabs-portafolio li a {
+  text-decoration: none;
+}
+.tabs-portafolio li a.active,
+.tabs-portafolio li a:hover {
+  background: #3822e4;
+  box-shadow: 0px 4.99458px 4.99458px rgb(0 0 0 / 25%);
+  border-radius: 6.24323px 6.24323px 0px 0px;
+  color: #fff;
+}
+
+.tabs-portafolio li a {
+  color: #213239;
+  display: block;
+  padding: 0 25px;
+  transition: 0.2s;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 1s;
+  margin-top: 50px;
+}
+
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(33.3% - 20px);
+}
+.grid .item-contenido {
+  position: relative;
+}
+
+.grid .item img {
+  width: 100%;
+  vertical-align: top;
+}
+.item-portafolio:hover .header,
+.item-servicio:hover .header,
+.item-portafolio:hover .header span,
+.item-servicio:hover .header span {
+  border-color: #3822e4 !important;
+}
+.header {
+  height: 39px;
+  line-height: 40px;
+  text-align: right;
+  border: 3.38095px solid #213239;
+  border-bottom: 3.38095px solid #213239;
+  box-sizing: border-box;
+  border-radius: 11.4351px 11.4351px 0 0;
+  transition: 0.2s;
+  padding: 0 13px;
+  overflow: hidden;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.item-servicio:hover .header:before,
+.item-servicio:focus .header:before,
+.item-servicio:active .header:before,
+.item-portafolio:hover .header:before,
+.item-portafolio:focus .header:before,
+.item-portafolio:active .header:before,
+.item_nosotros:hover .header:before,
+.item_nosotros:focus .header:before,
+.item_nosotros:active .header:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.header:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: #3822e4;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.header span {
+  display: inline-block;
+  border: 2.49729px solid #213239;
+  box-sizing: border-box;
+  height: 17px;
+  width: 17px;
+  border-radius: 10px;
+}
+.item-portafolio:hover .header,
+.item-servicio:hover .header,
+.item-portafolio:hover .header span,
+.item-servicio:hover .header span {
+  border-color: #3822e4 !important;
+}
+.header:hover {
+  background-color: #3822e4;
+}
+.item-servicio:hover .header span,
+.wrapper-portafolio .item-portafolio:hover .header span,
+.tarjetas .item_nosotros:hover .header span {
+  background: #fff;
+  border-color: #fff;
+}
